@@ -525,10 +525,6 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.botones_proyectos {
-  display: flex;
-  gap: 2rem;
-}
 .botones_proyectos .boton {
   display: flex;
   width: 10rem;
@@ -547,6 +543,9 @@ h3 {
 .botones_proyectos .boton:hover {
   background-color: #292929;
   transition: 0.6s;
+}
+.botones_proyectos #botonweb {
+  margin-top: 1rem;
 }
 
 .animacion {
