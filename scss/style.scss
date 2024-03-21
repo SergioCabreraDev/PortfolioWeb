@@ -201,15 +201,7 @@ footer {
   }
   
 
-  .bloque1{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 10rem 24rem;
-    background-color:#1c1d1e;
-    align-items: center;
-    justify-content: center;
-  }
+
 
   h3{
     font-family: "5";
@@ -299,6 +291,15 @@ footer {
       transition: 0.6s;
     }
   }
+  .bloque1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10rem 24rem;
+    background-color:#1c1d1e;
+    align-items: center;
+    justify-content: center;
+  }
 
   .bloque2{
     padding: 3rem 24rem;
@@ -321,8 +322,9 @@ footer {
 
   }
     .tecnologias{
-      display: flex;
-      flex-wrap: wrap;   
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+       
       /* Espacio entre elementos */
       gap: 10%;
     } 
@@ -469,19 +471,90 @@ footer {
  
   
 }
+
 @media (max-width: 767px){
 .header{
   padding: 5%;
   
 }
+.bloque1{
+  padding: 0rem 0rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  h1{
+    font-size: 35px;
+  }
+  a{
+    font-size: 15px;
+  }
+}
+.bloque2{
+  padding: 2rem 1rem;
+}
+.bloque3{
+  padding: 2rem 3rem;
+}
+.bloque4{
+  padding: 2rem 3rem;
+}
+.botones{display: block;}
+.filtros{font-size: 14px;}
+.proyectos{
+  margin-bottom: 1rem;
 
+  font-family: "4";
+
+  .proyecto_frontend{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-end-end-radius: 3rem;
+    background-color:#292929;
+    animation: fadeInLeft;
+    animation-duration: 0.7s;
+  }
+  div{
+    
+    margin: 2rem 2rem;
+    
+    h3{
+      font-size: 23px;
+      color: white;
+      font-family: "2";
+    }
+    span{
+      color: $color_principal;
+    }
+    p{
+      font-family: "6";
+      color: #c0bdbd;
+      font-size: 15px;
+    }
+    .portadaimg{
+      display: none;
+    }
+    a{
+      font-size: 15px;
+    }
+  }
+
+
+
+
+}
+
+.certificados{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
  
   footer {
  
       padding: 1.5% 22%;
       background-color:#1c1d1e;
-      position: fixed;
+     
       color: #C0BDBD;
       bottom: 0;
       width: 100%;
@@ -508,6 +581,11 @@ footer {
    
     
   }
+  #tech{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 
@@ -554,16 +632,6 @@ footer {
 
 
 
-/* Media query */
-@media (max-width: 767px) {
-  .contentbotones {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 40vh;
-      margin-top: 7%;
-  }
-}
 
 
 
