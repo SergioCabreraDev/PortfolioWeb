@@ -1,0 +1,614 @@
+
+$negro: black;
+$blanco: white;
+$color_principal: #ffda96;
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #2f2f2f;
+
+  margin: 0;
+  margin-bottom: 200px;
+  font-family: "Outfit-Regular";
+
+
+}
+p{
+  color: #c0bdbd;
+  font-family: "6";
+}
+.link{
+  color: #c0bdbd;
+  font-family: "6";
+}
+
+h2 {
+  
+  font-size: 40px;
+  color: $color_principal;
+  font-family: "1";
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+li {
+  list-style-type: none;
+}
+
+/* Código */
+.header{
+   position: fixed;
+  width:100%;
+  font-size: 17px;
+  padding: 1em;
+  font-family: "1";
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color:rgb(255, 255, 255);
+  padding: 1.5% 20%;
+  animation: fadeInDown;
+  animation-duration: 1s;
+  backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Prefijo para navegadores basados en WebKit, como Safari */
+
+ 
+}
+
+
+.header .h1{
+  /* background-color: aqua; */
+}
+.header .a{}
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+.header .button{
+  /* background-color: crimson; */
+
+  display: none;
+}
+.header .svg{
+  width:2em;
+  height:2em;
+  fill:white;
+}
+.button{
+  background: transparent;
+  border: 0px solid #000; /* Puedes ajustar el borde según tus necesidades */
+  color: #ffffff; /* Cambia el color del texto según tus necesidades */
+  
+  
+    img{
+      filter: invert(0.9);
+    }
+  
+}
+.header .nav{
+  /* background-color: bisque; */
+  
+}
+.aviso{
+  margin: 3% 8%;
+}
+.header .ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.header .li{
+  margin: 0 .8em;
+}
+/* Estilos iniciales para las opciones del menú */
+.ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.a {
+  text-decoration: none;
+  color: #ffffff; /* Cambia el color de texto a tu gusto */
+}
+/* Mover el bloque de idioma al final */
+.idioma {
+  padding-top: 0.8%;
+  display: flex;
+  gap: 5%;
+  padding-left: 9%;
+  align-items: center;
+  
+}
+/* Estilo de la línea animada */
+.li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px; /* Ancho y grosor de la línea */
+  background-color:$color_principal;
+  bottom: -5px; /* Distancia desde la parte inferior del enlace */
+  left: 0;
+  transition: width 0.3s ease; /* Animación de la anchura */
+}
+
+/* Efecto hover */
+.li:hover::after {
+  width: 100%; /* La línea se expandirá completamente en hover */
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  font-family: "1";
+  color: white;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+footer {
+  padding: 0% 22%;
+  color: #C0BDBD;
+  background-color:#1c1d1e;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:100px;
+  color: $blanco;
+  font-family: "Outfit-Light";
+
+  .svg_footer {
+    filter: invert(100%);
+  }
+  .ubicacion{
+    align-items: center;
+    text-align: center;
+  }
+  .contactos{
+    display: flex;
+    margin-top: 4%;
+    gap: 1%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+  }
+  
+
+  .bloque1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10rem 24rem;
+    background-color:#1c1d1e;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3{
+    font-family: "5";
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+    margin-top: 0.5rem;
+    color: white; 
+    font-size: 17px;
+    color: $color_principal;
+  }
+
+  .botones{
+    display: flex;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+
+    img{
+    
+    }
+
+    .linkedin{
+      display: flex;
+      width: 10rem;    
+      font-family: "3";
+      color: #c0bdbd;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      border: none;
+      margin: 20px;
+      padding: 10px 1px;
+      cursor: pointer;
+      background-color: #1f2022;
+      border: .5px solid #45484b;
+      border-radius: 10px;
+     
+     
+    }
+    .github{
+      display: flex;
+      width: 10rem;    
+      font-family: "3";
+      color: #c0bdbd;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      border: none;
+      margin: 20px;
+      padding: 10px 1px;
+      cursor: pointer;
+      background-color: #1f2022;
+      border: .5px solid #45484b;
+      border-radius: 10px;
+
+    }
+  
+    .cv{
+      display: flex;
+      width: 10rem;    
+      font-family: "3";
+      color: #c0bdbd;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      border: none;
+      margin: 20px;
+      padding: 10px 1px;
+      cursor: pointer;
+      background-color: #1f2022;
+      border: .5px solid #45484b;
+      border-radius: 10px;
+
+    }
+    .cv:hover{
+      background-color: #161616;
+  
+      transition: 0.6s;
+    }
+    .github:hover{
+      background-color: #161616;
+  
+      transition: 0.6s;
+    }
+    .linkedin:hover{
+      background-color: #161616;
+  
+      transition: 0.6s;
+    }
+  }
+
+  .bloque2{
+    padding: 3rem 24rem;
+
+  }
+  .bloque3{
+    background-color: #1c1d1e;
+    padding: 3rem 24rem;
+
+  }
+
+  .bloque4{
+    padding: 3rem 24rem;
+    svg{
+      margin-top: 2rem; 
+      width: 70px;
+      @media screen and (max-width:480px){
+          width: 60px;
+      }
+
+  }
+    .tecnologias{
+      display: flex;
+      flex-wrap: wrap;   
+      /* Espacio entre elementos */
+      gap: 10%;
+    } 
+
+  }
+
+  .proyectos{
+    margin-bottom: 1rem;
+
+    font-family: "4";
+
+    .proyecto_frontend{
+      display: flex;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      border-end-end-radius: 3rem;
+      background-color:#292929;
+      animation: fadeInLeft;
+      animation-duration: 0.7s;
+    }
+    div{
+      
+      margin: 2rem 2rem;
+      
+      h3{
+        font-size: 25px;
+        color: white;
+        font-family: "2";
+      }
+      span{
+        color: $color_principal;
+      }
+      p{
+        font-family: "6";
+        color: #c0bdbd;
+      }
+    }
+  }
+
+  .filtros{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #252627;
+    padding:7px;
+    max-width: 500px;
+    border: 0.5px solid #424242;
+    font-family: "5";
+    color: rgb(213, 213, 213);
+    cursor: pointer;
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .filtro.active {
+    color: #ffda96;
+    background-color: #353535;
+    border: 1.5px solid #5f6061;
+    border-radius: 0.7rem;
+    padding: 0.2rem 1rem;
+  
+  }
+
+  .certificados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 15px;
+
+    .certificado{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      background-color: #dbe0e409;
+      border: 0.5px solid #373839;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      gap: 1rem;
+    }
+
+    h3{
+      color: white;
+    }
+  }
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1500px){
+  .header{
+    padding: 2%;
+  }
+  
+ 
+}
+
+@media (max-width: 1024px){
+  .tituloinicial {
+
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+
+  .header .button{
+    display: block;
+    cursor: pointer;
+  }
+  .header .nav{
+    width:100%;
+    /* display: none; */
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo{
+    /* display: block; */
+    height:32vh;
+    pointer-events: auto;
+  }
+  .header .ul{
+    flex-direction: column;
+  }
+  .header .li{
+    margin: 1rem 0;
+  }
+
+
+
+}
+
+@media (max-width: 1024px){
+
+  .header{
+    padding: 5%;
+  }
+ 
+  
+}
+@media (max-width: 767px){
+.header{
+  padding: 5%;
+  
+}
+
+
+ 
+  footer {
+ 
+      padding: 1.5% 22%;
+      background-color:#1c1d1e;
+      position: fixed;
+      color: #C0BDBD;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      font-family: "Outfit-Light";
+
+    
+  
+    .svg_footer {
+      filter: brightness(0) invert(1);
+    }
+    .ubicacion{
+      align-items: center;
+      text-align: center;
+    }
+    .contactos{
+      display: flex;
+      margin-top: 4%;
+      gap: 1%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+   
+    
+  }
+}
+
+
+.botones_proyectos{
+  display: flex;
+  gap: 2rem;
+  .boton{
+    display: flex;
+    width: 10rem;    
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: .5px solid #45484b;
+    border-radius: 10px;
+  }
+  .boton:hover{
+    background-color: #292929;
+
+    transition: 0.6s;
+  }
+  
+}
+
+.animacion {
+  transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+
+}
+
+.animacion:hover{
+  box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+  transform: translate(0px,2px);
+  -webkit-transform: translate(0px,2px);
+  -moz-transform:translate(0px,2px);
+
+}
+
+
+
+/* Media query */
+@media (max-width: 767px) {
+  .contentbotones {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      margin-top: 7%;
+  }
+}
+
+
+
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "1";
+  src: url("/assets/fonts/PublicSans-Bold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "2";
+  src: url("/assets/fonts/PublicSans-Medium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "3";
+  src: url("/assets/fonts/PublicSans-Light.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "4";
+  src: url("/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "5";
+  src: url("/assets/fonts/PublicSans-SemiBold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: "6";
+  src: url("/assets/fonts/PublicSans-ExtraLight.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
