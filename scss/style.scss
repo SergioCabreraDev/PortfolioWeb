@@ -475,6 +475,9 @@ footer {
 @media (max-width: 767px){
 .header{
   padding: 5%;
+  backdrop-filter: blur(30px); /* Aplica el efecto de desenfoque */
+  -webkit-backdrop-filter: blur(30px); /* Prefijo para navegadores basados en WebKit, como Safari */
+  
   
 }
 .bloque1{
