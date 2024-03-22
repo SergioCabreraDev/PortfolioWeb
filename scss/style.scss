@@ -182,7 +182,8 @@ footer {
   font-family: "Outfit-Light";
 
   .svg_footer {
-    filter: invert(100%);
+    // filter: invert(100%);
+
   }
   .ubicacion{
     align-items: center;
@@ -415,8 +416,12 @@ footer {
 
 
 @media screen and (min-width: 1024px) and (max-width: 1500px){
+  
   .header{
     padding: 2%;
+  }
+  .bloque2, .bloque3, .bloque4{
+    padding: 2rem 7rem;
   }
   
  
@@ -467,7 +472,120 @@ footer {
 
   .header{
     padding: 5%;
+    backdrop-filter: blur(30px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(30px); /* Prefijo para navegadores basados en WebKit, como Safari */
+    
+    
   }
+  .bloque1{
+    padding: 3rem 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    h1{
+      font-size: 35px;
+    }
+    a{
+      font-size: 15px;
+    }
+    
+  }
+  .bloque2{
+    padding: 2rem 3rem;
+  }
+  .bloque3{
+    padding: 2rem 3rem;
+  }
+  .bloque4{
+    padding: 2rem 3rem;
+  }
+  .botones{}
+  .filtros{font-size: 14px;}
+  .proyectos{
+    margin-bottom: 1rem;
+  
+    font-family: "4";
+  
+    .proyecto_frontend{
+      display: flex;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-end-end-radius: 3rem;
+      background-color:#292929;
+      animation: fadeInLeft;
+      animation-duration: 0.7s;
+    }
+    div{
+      
+      margin: 2rem 2rem;
+      
+      h3{
+        font-size: 23px;
+        color: white;
+        font-family: "2";
+      }
+      span{
+        color: $color_principal;
+      }
+      p{
+        font-family: "6";
+        color: #c0bdbd;
+        font-size: 15px;
+      }
+      .portadaimg{
+        display: none;
+      }
+      a{
+        font-size: 15px;
+      }
+    }
+  
+  
+  
+  
+  }
+  
+  .certificados{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+   
+    footer {
+   
+        padding: 1.5% 22%;
+        background-color:#1c1d1e;
+       
+        color: #C0BDBD;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        font-family: "Outfit-Light";
+  
+      
+    
+      .svg_footer {
+        filter: brightness(0) invert(1);
+      }
+      .ubicacion{
+        align-items: center;
+        text-align: center;
+      }
+      .contactos{
+        display: flex;
+        margin-top: 4%;
+        gap: 1%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+     
+      
+    }
+    #tech{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
  
   
 }
@@ -593,6 +711,7 @@ footer {
 
 
 .botones_proyectos{
+  
 
   .boton{
     
