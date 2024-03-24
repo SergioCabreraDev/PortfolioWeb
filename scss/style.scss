@@ -754,6 +754,26 @@ footer {
   -moz-transform:translate(0px,2px);
 
 }
+.typed-out{
+  overflow: hidden;
+  border-right: .11em solid orange;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    typing 1s steps(15, end) forwards,
+    blink .8s infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+.container{
+  display: inline-block;
+}
 
 
 
